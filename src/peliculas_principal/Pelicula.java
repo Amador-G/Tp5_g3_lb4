@@ -9,10 +9,10 @@ public class Pelicula implements Comparable<Pelicula> {
 	private String Nombre;
 	private Categoria Categoria;
 	
-	
-	 public Pelicula(String Nombre,Categoria cat )
+	 Pelicula(){}
+	 public Pelicula(int id,String Nombre,Categoria cat )
 	{
-		this.id = ID_autonumerico();
+		this.id = id;
 		this.Nombre = Nombre;
 		Categoria=new Categoria();
 		this.Categoria.setId(cat.getId());
