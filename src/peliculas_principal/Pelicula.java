@@ -18,9 +18,15 @@ public class Pelicula implements Comparable<Pelicula> {
 		this.Categoria.setId(cat.getId());
 		this.Categoria.setDescripcion(cat.getDescripcion());
 	}
+		
 	
 	
-	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getNombre() {
 		return Nombre;
 	}
@@ -33,12 +39,6 @@ public class Pelicula implements Comparable<Pelicula> {
 	public void setCategoria(Categoria categoria) {
 		Categoria = categoria;
 	}
-	public int getId() {
-		return id;
-	}
-	
-	
-	
 	@Override
 	public int hashCode() {
 		return Objects.hash(Categoria, Nombre, id);
@@ -85,7 +85,7 @@ int salida;
 	}
 	@Override
 	public String toString() {
-		return "Pelicula\nid = " + id + "\nNombre = " + Nombre + "\nCategoria = " + Categoria.getDescripcion();
+		return  id +" " + Nombre +" " + Categoria.getDescripcion();
 	}
 	
 	
